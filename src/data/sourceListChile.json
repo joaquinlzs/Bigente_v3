@@ -1,0 +1,20 @@
+{
+    "2001": {
+        "name": "Subreddit Chile",
+        "type": "reddit",
+        "link": "https://www.reddit.com/r/chile",
+        "comments": "Primer subreddit"
+    },
+    "2002": {
+        "name": "Subreddit Chile Cringe",
+        "type": "reddit",
+        "link": "https://www.reddit.com/r/ChileCringe",
+        "comments": "Segundo subreddit"
+    },
+    "2003": {
+        "name": "Subreddit ChileFit",
+        "type": "reddit",
+        "link": "https://www.reddit.com/r/Chilefit",
+        "comments": "Quinto subreddit"
+    }
+}
