@@ -1,0 +1,117 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css');
+
+.card h2 {
+    margin: 0px;
+    padding: 0px;
+    font-size: 18px;
+}
+.card h5 {
+    margin: 0px;
+    font-size: 16px;
+}
+
+.card a {
+    color: gray;
+    text-decoration: none;
+    font-weight: bold;color: gray;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card {
+    /*width: 230px;
+    height: 170px; */
+    padding: 12px;
+    border: black;
+    background-color: white;
+    border-radius: 10px; /* Ajusta el radio de los bordes según tus preferencias */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega sombreado */
+    cursor: pointer;
+    position: relative;
+}
+
+.card:hover {
+    border: 2px solid black; /* Cambia el borde al color deseado al pasar el mouse */
+}
+
+.title {
+    color: black;
+    margin: 6px 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.2; /* Ajusta la altura de línea según tus preferencias */
+    -webkit-line-clamp: 3; /* Establece el máximo de 2 líneas */
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+}
+
+.author {
+    color: gray;
+    margin: 6px 0px;
+
+}
+
+.card-back {
+    display: none; /* Oculta la tarjeta en el dorso por defecto */
+    max-height: 150px; /* Establece una altura máxima según tus preferencias */
+    overflow-y: auto; /* Habilita el desplazamiento vertical cuando sea necesario */
+    font-size: 14px;
+}
+
+
+.card.flipped .card-front {
+    display: none; /* Oculta el frente cuando la tarjeta está volteada */
+}
+
+.card.flipped .card-back {
+    display: block; /* Muestra el dorso cuando la tarjeta está volteada */
+}
+
+/* Cambia el color de fondo de la barra de desplazamiento */
+::-webkit-scrollbar {
+    width: 10px; /* Ancho de la barra de desplazamiento vertical */
+}
+
+  /* Cambia el color del "pulgar" o la parte desplazable de la barra de desplazamiento */
+::-webkit-scrollbar-thumb {
+    background-color: black; /* Cambia el color del pulgar */
+    border-radius: 6px; /* Agrega bordes redondeados al pulgar */
+}
+
+.footer {
+    position: absolute; /* Establece la posición absoluta en el footer */
+    bottom: 0; /* Fija el footer en la parte inferior del componente */
+    left: 0; /* Alinea el footer a la izquierda del componente */
+    right: 0; /* Alinea el footer a la derecha del componente */
+    display: flex;
+    justify-content: space-between; /* Distribuye el espacio horizontalmente */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+.date {
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido */
+}
+
+.flipButton {
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido */
+}
+
+.card-small {
+    grid-column: span 6; /* Tamaño pequeño para la tarjeta */
+    grid-row: span 5;
+    /* Otros estilos para las tarjetas pequeñas */
+}
+
+.card-medium {
+    grid-column: span 8; /* Tamaño mediano para la tarjeta */
+    grid-row: span 5;
+    /* Otros estilos para las tarjetas medianas */
+}
+
+.card-large {
+    grid-column: span 14; /* Tamaño grande para la tarjeta */
+    grid-row: span 5;
+    /* Otros estilos para las tarjetas grandes */
+}
