@@ -15,7 +15,6 @@ function Card({ title, subreddit, selftext, score, permalink, created }) {
     };
 
 
-
     return (
     <div 
         className={`card ${flipped ? 'flipped' : ''} ${getCardSize(score)}`} 
@@ -25,7 +24,7 @@ function Card({ title, subreddit, selftext, score, permalink, created }) {
 
             <div className={`card-front ${flipped ? 'hidden' : ''}`}>
                 <div className="title">
-                    <h2>
+                    <h2 title={title}>
                         {title}
                     </h2>
                 </div>
