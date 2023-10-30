@@ -1,0 +1,32 @@
+{
+    "3001": {
+        "name": "Israel Exposed",
+        "type": "reddit",
+        "link": "https://www.reddit.com/r/israelexposed",
+        "comments": "Primer subreddit"
+    },
+    "3002": {
+        "name": "Geopolitics",
+        "type": "reddit",
+        "link": "https://www.reddit.com/r/geopolitics",
+        "comments": "Segundo subreddit"
+    },
+    "3003": {
+        "name": "Economics",
+        "type": "reddit",
+        "link": "https://www.reddit.com/r/Economics",
+        "comments": "Quinto subreddit"
+    },
+    "3004": {
+        "name": "Data is Beautiful",
+        "type": "reddit",
+        "link": "https://www.reddit.com/r/dataisbeautiful",
+        "comments": "Quinto subreddit"
+    },
+    "3005": {
+        "name": "Map Porn",
+        "type": "reddit",
+        "link": "https://www.reddit.com/r/MapPorn/",
+        "comments": "Quinto subreddit"
+    }
+}

@@ -5,16 +5,34 @@
         "link": "https://www.reddit.com/r/chile",
         "comments": "Primer subreddit"
     },
-    "2002": {
-        "name": "Subreddit Chile Cringe",
-        "type": "reddit",
-        "link": "https://www.reddit.com/r/ChileCringe",
-        "comments": "Segundo subreddit"
-    },
     "2003": {
         "name": "Subreddit ChileFit",
         "type": "reddit",
         "link": "https://www.reddit.com/r/Chilefit",
+        "comments": "Quinto subreddit"
+    },
+    "2004": {
+        "name": "Republica de Chile",
+        "type": "reddit",
+        "link": "https://www.reddit.com/r/RepublicadeChile",
+        "comments": "Quinto subreddit"
+    },
+    "2005": {
+        "name": "IT Chile",
+        "type": "reddit",
+        "link": "https://www.reddit.com/r/chileIT",
+        "comments": "Quinto subreddit"
+    },
+    "2006": {
+        "name": "Santiago, Chile",
+        "type": "reddit",
+        "link": "https://www.reddit.com/r/Santiago",
+        "comments": "Quinto subreddit"
+    },
+    "2007": {
+        "name": "Ask Larinamerica",
+        "type": "reddit",
+        "link": "https://www.reddit.com/r/asklatinamerica",
         "comments": "Quinto subreddit"
     }
 }

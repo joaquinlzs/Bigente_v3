@@ -1,0 +1,8 @@
+{
+    "1001": {
+        "name": "Sports",
+        "type": "reddit",
+        "link": "https://www.reddit.com/r/sports",
+        "comments": "Primer subreddit"
+    }
+}

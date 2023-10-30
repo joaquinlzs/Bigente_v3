@@ -4,6 +4,10 @@ import { useDispatch } from 'react-redux';
 import { changeTopic } from '../redux/topicSlice'; 
 import sourceListChile from "../data/sourceListChile.json";
 import sourceListEnergia from "../data/sourceListEnergia.json";
+import sourceListGeopolitica from "../data/sourceListGeopolitica.json";
+import sourceListCine from "../data/sourceListCine.json";
+import sourceListDeportes from "../data/sourceListDeportes.json";
+import sourceListLeyes from "../data/sourceListLeyes.json";
 import fetchData from "../utility/fetchData";
 
 function Header() {
@@ -12,7 +16,11 @@ function Header() {
     const handleButtonClick = async (topic) => {
         const sourceLists = {
             "Chile": sourceListChile,
-            "Energia": sourceListEnergia
+            "Energia": sourceListEnergia,
+            "Geopolitica": sourceListGeopolitica,
+            "Cine": sourceListCine,
+            "Deportes": sourceListDeportes,
+            "Leyes": sourceListLeyes,
         };
         const selectedSourceList = sourceLists[topic];
         if (selectedSourceList) {
@@ -42,6 +50,11 @@ function Header() {
                 <ul className="nav-list">
                     <li><button onClick={() => handleButtonClick("Chile")}>Chile</button></li>
                     <li><button onClick={() => handleButtonClick("Energia")}>Energía</button></li>
+                    <li><button onClick={() => handleButtonClick("Geopolitica")}>Geopolítica</button></li>
+                    <li><button onClick={() => handleButtonClick("Cine")}>Cine</button></li>
+                    <li><button onClick={() => handleButtonClick("Deportes")}>Deportes</button></li>
+                    <li><button onClick={() => handleButtonClick("Leyes")}>Leyes</button></li>
+
                 </ul>
             </nav>
         </header>
