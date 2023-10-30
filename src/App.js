@@ -13,7 +13,8 @@ function App() {
     if(!selectedTopic) {
       setCards("Selecciona un tema");
     } else if (selectedTopic.length > 1) {
-      const updatedCards = selectedTopic.map(item => (
+      const sortedTopic = [...selectedTopic].sort((a, b) => b.score - a.score);
+      const updatedCards = sortedTopic.map(item => (
         <Card 
           key={item.id}
           title={item.title}
