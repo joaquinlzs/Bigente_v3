@@ -6,7 +6,8 @@ import getCardSize from '../utility/cardSize';
 
 function Card({ title, subreddit, selftext, score, permalink, created }) {
     const [flipped, setFlipped] = useState(false);
-    const hasSelftext = selftext && selftext.trim().length > 0;
+    //const hasSelftext = selftext && selftext.trim().length > 0;
+    const hasSelftext = selftext;
 
     const flipCard = () => {
         if (hasSelftext) {

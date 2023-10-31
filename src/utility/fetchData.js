@@ -23,11 +23,11 @@ async function fetchData(objectSourceList) {
             title: item.data.title,
             score: item.data.score,
             subreddit: item.data.subreddit,
-            text: item.data.selftext,
+            selftext: item.data.selftext,
             link: item.data.permalink,
             date: item.data.created,
         }));
-        
+
         return prettyData;
     }
 

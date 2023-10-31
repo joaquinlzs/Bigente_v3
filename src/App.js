@@ -19,15 +19,17 @@ function App() {
           key={item.id}
           title={item.title}
           subreddit={item.subreddit}
+          selftext={item.selftext}
           score={item.score}
           permalink={item.link}
           created={item.date}
         />
       ))
       setCards(updatedCards);
+      
     }
   }, [selectedTopic])
-
+  
   return (
     <div className="App">
       <Header />
