@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import Card from './components/Card';
 import '../src/styles/Cardcontainer.css';
 import milisegundosPasados from './utility/milisegundosPasados';
+import dias2milisegundos from './utility/dias2milisegundos';
 
 function App() {
   const selectedTopic = useSelector((state) => state.topic[0])
@@ -16,7 +17,7 @@ function App() {
     } else if (selectedTopic.length > 1) {
       const sortedTopic = [...selectedTopic].sort((a, b) => b.score - a.score);
       const filteredTopic = sortedTopic.filter(item => {
-        return milisegundosPasados(item.date) < 259200000;
+        return milisegundosPasados(item.date) < dias2milisegundos(3);
       })
       const updatedCards = filteredTopic.map(item => (
         <Card 

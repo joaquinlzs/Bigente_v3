@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/Card.css';
 import Tag from './Tag';
-import tiempoPasadoHastaHoy from '../utility/dateUnix';
 import getCardSize from '../utility/cardSize';
 import milisegundosPasados from '../utility/milisegundosPasados';
 import fechaTexto from '../utility/fechaTexto';
