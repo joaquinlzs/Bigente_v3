@@ -1,4 +1,4 @@
-function tiempoPasadoHastaHoy(timestamp) {
+function tiempoPasadoHastaHoyX(timestamp) {
     // Convierte el timestamp en milisegundos multiplicando por 1000
     const fechaPublicacion = new Date(timestamp * 1000);
     const fechaActual = new Date();
@@ -44,4 +44,4 @@ function tiempoPasadoHastaHoy(timestamp) {
     }
 }
 
-export default tiempoPasadoHastaHoy;
+export default tiempoPasadoHastaHoyX;

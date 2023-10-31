@@ -1,6 +1,6 @@
-function milisegundosPasados(timestamp) {
-    // Convierte el timestamp en milisegundos multiplicando por 1000
-    const fechaPublicacion = new Date(timestamp * 1000);
+function milisegundosPasados(unixTime) {
+    // Convierte el unixTime en milisegundos multiplicando por 1000
+    const fechaPublicacion = new Date(unixTime * 1000);
     const fechaActual = new Date();
 
     // Calcula la diferencia en milisegundos

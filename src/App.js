@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux';
 import { useEffect, useState } from 'react';
 import Card from './components/Card';
 import '../src/styles/Cardcontainer.css';
+import milisegundosPasados from './utility/milisegundosPasados';
 
 function App() {
   const selectedTopic = useSelector((state) => state.topic[0])
@@ -14,7 +15,10 @@ function App() {
       setCards("Selecciona un tema");
     } else if (selectedTopic.length > 1) {
       const sortedTopic = [...selectedTopic].sort((a, b) => b.score - a.score);
-      const updatedCards = sortedTopic.map(item => (
+      const filteredTopic = sortedTopic.filter(item => {
+        return milisegundosPasados(item.date) < 259200000;
+      })
+      const updatedCards = filteredTopic.map(item => (
         <Card 
           key={item.id}
           title={item.title}

@@ -3,6 +3,8 @@ import '../styles/Card.css';
 import Tag from './Tag';
 import tiempoPasadoHastaHoy from '../utility/dateUnix';
 import getCardSize from '../utility/cardSize';
+import milisegundosPasados from '../utility/milisegundosPasados';
+import fechaTexto from '../utility/fechaTexto';
 
 function Card({ title, subreddit, selftext, score, permalink, created, thumbnail }) {
     const [flipped, setFlipped] = useState(false);
@@ -46,7 +48,7 @@ function Card({ title, subreddit, selftext, score, permalink, created, thumbnail
                 <div className="footer">
                     <div className="date">
                         <i class="fa-regular fa-calendar"></i>&nbsp;
-                        {tiempoPasadoHastaHoy(created)} [{score}]
+                        {fechaTexto(milisegundosPasados(created))} [{score}]
                     </div>
                     {hasSelftext && (
                     <div className="flipButton">
