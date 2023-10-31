@@ -23,13 +23,14 @@ function App() {
           score={item.score}
           permalink={item.link}
           created={item.date}
+          thumbnail={item.thumbnail}
         />
       ))
       setCards(updatedCards);
       
     }
   }, [selectedTopic])
-  
+
   return (
     <div className="App">
       <Header />

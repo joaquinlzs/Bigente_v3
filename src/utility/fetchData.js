@@ -26,8 +26,11 @@ async function fetchData(objectSourceList) {
             selftext: item.data.selftext,
             link: item.data.permalink,
             date: item.data.created,
+            thumbnail: item.data.thumbnail
         }));
 
+        //console.log(prettyData)
+        
         return prettyData;
     }
 

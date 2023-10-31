@@ -4,10 +4,11 @@ import Tag from './Tag';
 import tiempoPasadoHastaHoy from '../utility/dateUnix';
 import getCardSize from '../utility/cardSize';
 
-function Card({ title, subreddit, selftext, score, permalink, created }) {
+function Card({ title, subreddit, selftext, score, permalink, created, thumbnail }) {
     const [flipped, setFlipped] = useState(false);
     //const hasSelftext = selftext && selftext.trim().length > 0;
     const hasSelftext = selftext;
+    const hasThumbnail = (thumbnail !== "self");
 
     const flipCard = () => {
         if (hasSelftext) {
@@ -32,10 +33,11 @@ function Card({ title, subreddit, selftext, score, permalink, created }) {
                 <div className="author">
                     <h5>
                         by {subreddit[0].toUpperCase() + subreddit.slice(1)}&nbsp;
-                        <a href={`https://www.reddit.com${permalink}`}>
+                        <a href={`https://www.reddit.com${permalink}`} target="blank">
                             <i class="fa-solid fa-up-right-from-square"></i>
                         </a>&nbsp;
-                        [{score}]
+                        {hasThumbnail && 
+                        (<i class="fa-solid fa-image"></i>)}
                     </h5>
                     </div>
                 <div className="label">
@@ -44,7 +46,7 @@ function Card({ title, subreddit, selftext, score, permalink, created }) {
                 <div className="footer">
                     <div className="date">
                         <i class="fa-regular fa-calendar"></i>&nbsp;
-                        {tiempoPasadoHastaHoy(created)}
+                        {tiempoPasadoHastaHoy(created)} [{score}]
                     </div>
                     {hasSelftext && (
                     <div className="flipButton">
