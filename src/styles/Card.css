@@ -19,8 +19,6 @@
 }
 
 .card {
-    /*width: 230px;
-    height: 170px; */
     padding: 12px;
     border: black;
     background-color: white;
@@ -30,9 +28,9 @@
     position: relative;
 }
 
-.card:hover {
-    border: 2px solid black; /* Cambia el borde al color deseado al pasar el mouse */
-}
+/*.card:hover {
+    border: 1px solid black;
+}*/
 
 .title {
     color: black;
@@ -99,19 +97,19 @@
 }
 
 .card-small {
-    grid-column: span 6; /* Tamaño pequeño para la tarjeta */
-    grid-row: span 5;
+    grid-column: span 1; /* Tamaño pequeño para la tarjeta */
+    grid-row: span 1;
     /* Otros estilos para las tarjetas pequeñas */
 }
 
 .card-medium {
-    grid-column: span 8; /* Tamaño mediano para la tarjeta */
-    grid-row: span 5;
+    grid-column: span 2; /* Tamaño mediano para la tarjeta */
+    grid-row: span 1;
     /* Otros estilos para las tarjetas medianas */
 }
 
 .card-large {
-    grid-column: span 14; /* Tamaño grande para la tarjeta */
-    grid-row: span 5;
+    grid-column: span 2; /* Tamaño grande para la tarjeta */
+    grid-row: span 2;
     /* Otros estilos para las tarjetas grandes */
 }

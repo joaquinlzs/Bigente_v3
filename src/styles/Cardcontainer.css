@@ -1,13 +1,13 @@
 .cardscontainer {
-    display: grid;
-    gap: 10px;
     justify-content: center;
-    padding: 10px;
-    grid-auto-flow: row; /* Cambia el flujo automático a vertical */
+    padding: 12px;
 
-    /* Utiliza minmax para establecer un tamaño fijo de las filas y columnas en píxeles */
-    grid-template-rows: repeat(auto-fill, minmax(15px, 1fr)); /* Filas de altura mínima de 200px */
-    grid-template-columns: repeat(auto-fill, minmax(15px, 1fr)); /* Columnas de ancho mínimo de 200px */ 
-
+    display: grid;
+    grid-auto-flow: dense;
+    gap: 8px;
+    /*grid-template-rows: repeat(auto-fill, 150px);*/
+    grid-template-columns: repeat(auto-fill, 150px);
+    grid-template-rows: repeat(5, 150px);
 }
+
 
