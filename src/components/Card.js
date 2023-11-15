@@ -45,9 +45,6 @@ function Card({ title, subreddit, selftext, score, permalink, created, thumbnail
                         (<i class="fa-solid fa-image"></i>)}
                     </h5>
                     </div>
-                <div className="label">
-                    <Tag text={"CO2"} color={"gray"}/>
-                </div>
                 <div className="footer">
                     <div className="date">
                         <i class="fa-regular fa-calendar"></i>&nbsp;
