@@ -3,8 +3,8 @@
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
     position: relative;
     /* Necesario para posicionar la barra correctamente */
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
@@ -23,7 +23,7 @@
 }
 
 .black-text {
-    color: black;
+    color: white;
 
 }
 
@@ -65,7 +65,7 @@
 
 .nav-list button {
     text-decoration: none;
-    color: black;
+    color: white;
     font-weight: bold;
     transition: color 0.3s;
     font-size: 18px;

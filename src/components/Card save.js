@@ -23,12 +23,8 @@ function Card({ title, subreddit, selftext, score, permalink, created, thumbnail
         className={`card ${flipped ? 'flipped' : ''} ${getCardSize(score)}`} 
         onClick={flipCard}
     >
-        <div className="tag">
-                <div className="tag-block"></div>
-                <div className="tag-label">Litio</div>
-        </div>
-
         <div className="card-inner">
+
             <div className={`card-front ${flipped ? 'hidden' : ''}`}>
                 <div className="title">
                     <h2 title={title}>
