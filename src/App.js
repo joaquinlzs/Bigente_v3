@@ -2,7 +2,7 @@ import './App.css';
 import Header from './components/Header'
 import { useSelector } from 'react-redux';
 import { useEffect, useState } from 'react';
-import Card from './components/Card';
+import CardPost from './components/CardPost';
 import '../src/styles/Cardcontainer.css';
 import milisegundosPasados from './utility/milisegundosPasados';
 import dias2milisegundos from './utility/dias2milisegundos';
@@ -20,7 +20,7 @@ function App() {
         return milisegundosPasados(item.date) < dias2milisegundos(3);
       })
       const updatedCards = filteredTopic.map(item => (
-        <Card 
+        <CardPost 
           key={item.id}
           title={item.title}
           subreddit={item.subreddit}
