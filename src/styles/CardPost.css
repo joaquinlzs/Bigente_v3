@@ -1,8 +1,7 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css');
 
-/* Estilo general */
+/* GENERAL */
 .postCard {
-    border-radius: 0px 0px 50px 0px;
     color: white;
     background-color: black;
     box-shadow: 0 4px 8px rgb(197, 197, 197);
@@ -11,35 +10,68 @@
     text-align: left;
 }
 
-/* Estilo del Header */
-.front {
-    padding: 4px;
+.card-large {
+    border-radius: 0px 0px 0px 50px;
+    height: 260px;
 }
-/* Estilo del Front */
 
-.title {
+.card-medium {
+    border-radius: 0px 0px 0px 35px;
+    height: 130px;
+}
+
+.card-small {
+    border-radius: 0px 0px 0px 20px;
+    height: 130px;
+}
+/* ---------------------------------------------*/
+
+/* FRONT Y REVERSE */
+.front {
+    padding: 0px 8px;
+    height: 80%;
+    overflow-y: auto; 
+}
+
+.reverse {
+    padding: 2px 6px;
+    height: 80%;
+    display: none; 
+    overflow-y: auto; 
+}
+
+/* ---------------------------------------------*/
+
+/* TITULAR Y DATA */
+.title a {
+    color: white;
     font-weight: bold;
+    text-decoration: none;
     overflow: hidden;
     text-overflow: ellipsis;
     -webkit-box-orient: vertical;
     display: -webkit-box;
+    -webkit-box-orient: vertical; /* Orientación vertical */
+
 }
 
-/* Front for size:*/
-.card-large .title {
-    height: 100%;
-    font-size: 30px;
-    overflow: hidden;
-    
+.card-large a {
+    font-size: 28px;
+    -webkit-line-clamp: 5;
 }
 
-.card-medium .title {
-    height: 100%;
-    font-size: 16px;
-    overflow: hidden;
+.card-medium a {
+    font-size: 18px;
+    -webkit-line-clamp: 4;
 }
+
+.card-small a {
+    font-size: 15px;
+    -webkit-line-clamp: 5;
+}
+
+
 /* Estilo para el flip card */
-
 .reverse {
     display: none; 
     max-height: 230px; 
