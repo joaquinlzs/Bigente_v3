@@ -13,7 +13,7 @@ function CardPost({ title, subreddit, selftext, score, permalink, created, thumb
     };
 
     return (
-        <div className={`postCard ${flipped ? 'flipped' : ''} ${getCardSize(score)}`} onClick={flipCard}>
+        <div className={`postCard ${flipped ? 'flipped' : ''} ${getCardSize(score)}`} >
 
             <div className={`front ${flipped ? 'hidden' : ''}`}>
                 <div className='title'>
@@ -21,15 +21,18 @@ function CardPost({ title, subreddit, selftext, score, permalink, created, thumb
                         {title}
                     </a>
                 </div>
+                
             </div>
 
             <div className={`reverse ${flipped ? '' : 'hidden'}`}>
                 <div className='data'>
                     Publicado en {subreddit} hace {fechaTexto(milisegundosPasados(created))} vía Reddit. <br />
-                    Tiene un puntaje de {score}.
+                    Puntaje: {score}.
                 </div>
             </div>
-
+            <div className="flipButton" onClick={flipCard}>
+                <i class="fa-solid fa-retweet"></i>
+            </div>
         </div>
     )
 };

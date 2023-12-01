@@ -1,6 +1,7 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css');
 
 /* GENERAL */
+
 .postCard {
     color: white;
     background-color: black;
@@ -25,8 +26,8 @@
     height: 130px;
 }
 /* ---------------------------------------------*/
-
 /* FRONT Y REVERSE */
+
 .front {
     padding: 0px 8px;
     height: 80%;
@@ -40,9 +41,17 @@
     overflow-y: auto; 
 }
 
-/* ---------------------------------------------*/
+.flipButton {
+    position: absolute;
+    bottom: 4px; /* Ajusta la distancia desde la parte inferior */
+    right: 4px; /* Ajusta la distancia desde el borde derecho */
+    color: white; /* Color del texto del botón */
+    cursor: pointer;
+}
 
+/* ---------------------------------------------*/
 /* TITULAR Y DATA */
+
 .title a {
     color: white;
     font-weight: bold;
@@ -70,8 +79,9 @@
     -webkit-line-clamp: 5;
 }
 
+/* ---------------------------------------------*/
+/* FLIP CARD */
 
-/* Estilo para el flip card */
 .reverse {
     display: none; 
     max-height: 230px; 
@@ -87,41 +97,8 @@
     display: block; /* Muestra el dorso cuando la tarjeta está volteada */
 }
 
-
-
-
-
-/* Cambia el color de fondo de la barra de desplazamiento */
-::-webkit-scrollbar {
-    width: 10px; /* Ancho de la barra de desplazamiento vertical */
-}
-
-  /* Cambia el color del "pulgar" o la parte desplazable de la barra de desplazamiento */
-::-webkit-scrollbar-thumb {
-    background-color: gray; /* Cambia el color del pulgar */
-    border-radius: 6px; /* Agrega bordes redondeados al pulgar */
-}
-
-.footer {
-    position: absolute; /* Establece la posición absoluta en el footer */
-    bottom: 0; /* Fija el footer en la parte inferior del componente */
-    left: 0; /* Alinea el footer a la izquierda del componente */
-    right: 0; /* Alinea el footer a la derecha del componente */
-    display: flex;
-    justify-content: space-between; /* Distribuye el espacio horizontalmente */
-    align-items: center; /* Centra verticalmente los elementos */
-}
-
-.date {
-    display: flex;
-    align-items: center; /* Centra verticalmente el contenido */
-}
-
-.flipButton {
-    display: flex;
-    align-items: center; /* Centra verticalmente el contenido */
-}
-
+/* ---------------------------------------------*/
+/* TAMAÑO DE LAS CARDS */
 .card-small {
     grid-column: span 1; /* Tamaño pequeño para la tarjeta */
     grid-row: span 1;
