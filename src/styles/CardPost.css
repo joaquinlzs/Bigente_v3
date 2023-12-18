@@ -4,7 +4,7 @@
 
 .postCard {
     color: white;
-    background-color: black;
+    /*background-color: black;*/
     box-shadow: 0 4px 8px rgb(197, 197, 197);
     cursor: pointer;
     position: relative;
