@@ -1,20 +1,20 @@
 function backgroundColor(topic) {
-    switch (topic) {
-        case 'chile':
-                return '#4d9de0';
-        case 'Subreddit ChileFit':
-                return '#ff8352';
-        case 'RepublicadeChile':
-                return '#7776bc';
-        case 'IT Chile':
-                return '#57c78b';
-        case 'Santiago':
-                return '#71d6ca';
-        case 'asklatinamerica':
-                return '#7776bc';
-        default:
-                return '#fa686a';
-    }
+        switch (topic) {
+                case 'chile':
+                        return '#435eca';
+                case 'Subreddit ChileFit':
+                        return '#c24a4a';
+                case 'RepublicadeChile':
+                        return '#e9a75b';
+                case 'IT Chile':
+                        return '#5db2b9';
+                case 'Santiago':
+                        return '#4ead6c';
+                case 'asklatinamerica':
+                        return '#96578c';
+                default:
+                        return '#b1c042';
+        }
 }
 
 export default backgroundColor;
